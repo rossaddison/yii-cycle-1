@@ -6,13 +6,13 @@
     <br>
 </p>
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii-cycle/v)](https://packagist.org/packages/yiisoft/yii-cycle)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii-cycle/downloads)](https://packagist.org/packages/yiisoft/yii-cycle)
-[![Build status](https://github.com/yiisoft/yii-cycle/actions/workflows/build.yml/badge.svg)](https://github.com/yiisoft/yii-cycle/actions/workflows/build.yml)
-[![Code Coverage](https://codecov.io/gh/yiisoft/yii-cycle/graph/badge.svg?token=V9LWVNTIAA)](https://codecov.io/gh/yiisoft/yii-cycle)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyiisoft%2Fyii-cycle%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/yiisoft/yii-cycle/master)
-[![static analysis](https://github.com/yiisoft/yii-cycle/workflows/static%20analysis/badge.svg)](https://github.com/yiisoft/yii-cycle/actions?query=workflow%3A%22static+analysis%22)
-[![type-coverage](https://shepherd.dev/github/yiisoft/yii-cycle/coverage.svg)](https://shepherd.dev/github/yiisoft/yii-cycle)
+[![Latest Stable Version](https://poser.pugx.org/rossaddison/yii-cycle-1-1/v)](https://packagist.org/packages/rossaddison/yii-cycle-1-1)
+[![Total Downloads](https://poser.pugx.org/rossaddison/yii-cycle-1/downloads)](https://packagist.org/packages/rossaddison/yii-cycle-1)
+[![Build status](https://github.com/rossaddison/yii-cycle-1/actions/workflows/build.yml/badge.svg)](https://github.com/rossaddison/yii-cycle-1/actions/workflows/build.yml)
+[![Code Coverage](https://codecov.io/gh/rossaddison/yii-cycle-1/graph/badge.svg?token=V9LWVNTIAA)](https://codecov.io/gh/rossaddison/yii-cycle-1)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyiisoft%2Fyii-cycle%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/rossaddison/yii-cycle-1/master)
+[![static analysis](https://github.com/rossaddison/yii-cycle-1/workflows/static%20analysis/badge.svg)](https://github.com/rossaddison/yii-cycle-1/actions?query=workflow%3A%22static+analysis%22)
+[![type-coverage](https://shepherd.dev/github/rossaddison/yii-cycle-1/coverage.svg)](https://shepherd.dev/github/rossaddison/yii-cycle-1)
 
 Cycle is a PHP DataMapper ORM and Data Modelling engine designed to safely work
 in classic and daemonized PHP applications such as [RoadRunner](https://github.com/roadrunner-server/roadrunner).
