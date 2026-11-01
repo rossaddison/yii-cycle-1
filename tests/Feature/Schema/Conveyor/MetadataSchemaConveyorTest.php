@@ -64,6 +64,7 @@ class MetadataSchemaConveyorTest extends BaseConveyor
             Entities::class,
             TableInheritance::class,
             MergeColumns::class,
+            MergeIndexes::class,
             GenerateRelations::class,
             GenerateModifiers::class,
             ValidateEntities::class,
@@ -71,7 +72,6 @@ class MetadataSchemaConveyorTest extends BaseConveyor
             RenderRelations::class,
             RenderModifiers::class,
             ForeignKeys::class,
-            MergeIndexes::class,
             GenerateTypecast::class,
         ], $generators);
     }
@@ -89,6 +89,7 @@ class MetadataSchemaConveyorTest extends BaseConveyor
             Entities::class,
             TableInheritance::class,
             MergeColumns::class,
+            MergeIndexes::class,
             GenerateRelations::class,
             GenerateModifiers::class,
             ValidateEntities::class,
@@ -96,7 +97,6 @@ class MetadataSchemaConveyorTest extends BaseConveyor
             RenderRelations::class,
             RenderModifiers::class,
             ForeignKeys::class,
-            MergeIndexes::class,
             SyncTables::class,
             GenerateTypecast::class,
         ], $generators);
@@ -125,6 +125,7 @@ class MetadataSchemaConveyorTest extends BaseConveyor
             Entities::class,
             TableInheritance::class,
             MergeColumns::class,
+            MergeIndexes::class,
             GenerateRelations::class,
             GenerateModifiers::class,
             ValidateEntities::class,
@@ -132,7 +133,6 @@ class MetadataSchemaConveyorTest extends BaseConveyor
             RenderRelations::class,
             RenderModifiers::class,
             ForeignKeys::class,
-            MergeIndexes::class,
             GenerateTypecast::class,
         ], $generators);
     }
