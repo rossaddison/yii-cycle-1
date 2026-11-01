@@ -88,8 +88,20 @@ class MetadataSchemaConveyor extends SchemaConveyor
         $this->conveyor[Conveyor::STAGE_INDEX][] = new TableInheritance($reader);
         // add @Table(columns) declarations
         $this->conveyor[Conveyor::STAGE_INDEX][] = new MergeColumns($reader);
-        // add @Table(indexes) declarations
-        $this->conveyor[Conveyor::STAGE_RENDER][] = new MergeIndexes($reader);
+        // add @Table(indexes) declarations -- must run in the INDEX stage,
+        // before GenerateRelations (STAGE_RENDER): a relation targeting an
+        // entity whose primary key is declared only via #[Table\PrimaryKey]
+        // (any natural/non-auto-increment key) needs that primary key
+        // already registered on the entity by the time GenerateRelations
+        // reads it, or schema compilation fails with
+        // "Entity `<role>` must have defined primary key"
+        // (Cycle\Schema\Relation\RelationSchema::getPrimaryColumns()).
+        // Previously registered into STAGE_RENDER, after GenerateRelations
+        // -- which only ever happened to work because every entity in
+        // existing usage had an auto-increment int PK, detected a different
+        // way (Cycle's own 'primary'/'bigPrimary' column type) that doesn't
+        // depend on MergeIndexes at all.
+        $this->conveyor[Conveyor::STAGE_INDEX][] = new MergeIndexes($reader);
 
         $this->isAddedMetadataGenerators = true;
     }
