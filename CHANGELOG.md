@@ -2,7 +2,7 @@
 
 ## 1.0.1 under development
 
-- Chg #222: Change PHP constraint in composer.json to `8.1 - 8.4` (@dagpro)
+- Chg #222, #233: Change PHP constraint in composer.json to `8.1 - 8.5` (@dagpro, @tapat4n)
 - Bug #222: Explicitly mark nullable parameters (@dagpro)
 - Chg #222, #231: Replace `/` with `:` in the console command names (@dagpro)
 - Chg #222: Bump `cycle/annotated` version to `^4.2` (@dagpro)
@@ -18,6 +18,9 @@
 - Chg #222: Bump minimal version of `yiisoft/aliases` to `^3.0` (@dagpro)
 - Chg #222: Bump `symfony/console` version to `^6.4 || ^7.2` (@dagpro)
 - Chg #222: Bump `symfony/finder` version to `^6.4 || ^7.2` (@dagpro)
+- Enh #244: Explicitly import classes and functions in "use" section (@vjik)
+- Enh #244: Remove `#[Override]` attribute from methods (@vjik)
+- Enh #247: Remove unused `webmozart/glob` dependency (@vjik)
 
 ## 1.0.0 March 21, 2024
 
